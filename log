@@ -125,3 +125,9 @@ exercises.c:99:19: error: expected expression before ‘int’
    99 |    int *primero = int *(first(lista));
       |                   ^~~
 2bc59fe
+Thu Mar 19 07:23:36 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|5
+total_score: 0/70
+a238fbc

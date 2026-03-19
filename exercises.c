@@ -96,7 +96,7 @@ posiciona en el elemento anterior.
 void vaciarLista (List *lista, int elemento)
 {
    int talla = get_size(lista);
-   int *primero = int *(first(lista));
+   int *primero = (int *)first(lista);
    for(int i = 0; i < talla; i++)
       {
          if(*primero == elemento)

@@ -63,8 +63,8 @@ int sumaLista(List *L) {
    int acumulado = 0;
    int tamano = get_size(L);
    
-   acumulado += (int)*first(L)
-   for (int i = 0; i < tamano; i++)
+   acumulado += *(int*)first(L)
+   for (int i = 1; i < tamano; i++)
       {
          int *dato = (int*) next(L);
          acumulado += *dato;

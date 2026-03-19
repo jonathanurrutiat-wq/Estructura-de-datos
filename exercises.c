@@ -75,7 +75,7 @@ void eliminaElementos(List*L, int elem)
 
    for(int i = 0; i < talla; i++)
       {
-         if((int)*primero == elemento)
+         if((int)*primero == elem)
          {
             popCurrent(L);
          }

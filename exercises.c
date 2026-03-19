@@ -96,11 +96,11 @@ posiciona en el elemento anterior.
 void vaciarLista (List *lista, int elemento)
 {
    int talla = get_size(lista);
-   int *primero = first(lista);
+   int* primero = first(lista);
    
    for(int i = 0; i < talla; i++)
       {
-         if(*primero == elemento)
+         if((int)*primero == elemento)
          {
             popCurrent(lista);
          }

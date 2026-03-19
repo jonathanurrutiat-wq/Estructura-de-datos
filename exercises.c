@@ -107,6 +107,10 @@ void vaciarLista (List *lista, int elemento)
             popCurrent(lista);
          }
          primero = next(lista);
+         if(primero == NULL)
+         {
+            return;
+         }
       }
    
 }

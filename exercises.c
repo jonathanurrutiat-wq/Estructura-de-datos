@@ -97,7 +97,7 @@ void vaciarLista (List *lista, int elemento)
 {
    int talla = get_size(lista);
    void *primero = first(lista);
-   for(i = 0; i < talla; i++)
+   for(int i = 0; i < talla; i++)
       {
          if(*primero == elemento)
          {

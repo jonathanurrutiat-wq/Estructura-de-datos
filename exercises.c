@@ -55,14 +55,7 @@ int sumaLista(List *L) {
    return 0;
 }
 
-/*
-Ejercicio 3.
-Crea una función que reciba una lista de punteros a int (int*) y
-un entero elem. La función debe eliminar todos los elementos 
-de la lista que sean iguales a elem.
-Asume que popCurrent luego de eliminar un elemento se
-posiciona en el elemento anterior.
-*/
+
 
 void eliminaElementos(List*L, int elem){
 
@@ -87,5 +80,31 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 
 int parentesisBalanceados(char *cadena) {
    return 0;
+}
+
+
+/*
+Ejercicio 3.
+Crea una función que reciba una lista de punteros a int (int*) y
+un entero elem. La función debe eliminar todos los elementos 
+de la lista que sean iguales a elem.
+Asume que popCurrent luego de eliminar un elemento se
+posiciona en el elemento anterior.
+*/
+
+
+def vaciarLista (List lista, int elemento)
+{
+   int talla = get_size(lista);
+   void *primero = first(lista);
+   for(i = 0; i < talla; i++)
+      {
+         if(*primero == elemento)
+         {
+            popCurrent(lista);
+         }
+         primero = next(lista);
+      }
+   
 }
 

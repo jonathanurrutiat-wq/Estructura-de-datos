@@ -98,19 +98,13 @@ void vaciarLista (List *lista, int elemento)
    int talla = get_size(lista);
    int* primero = first(lista);
 
-   printf("%d", (int)*primero);
-
-   for(int i = 0; i < talla; i++)
+   for(int i = 1; i < talla; i++)
       {
          if((int)*primero == elemento)
          {
             popCurrent(lista);
          }
-         primero = next(lista);
-         if(primero == NULL)
-         {
-            return;
-         }
+
       }
    
 }

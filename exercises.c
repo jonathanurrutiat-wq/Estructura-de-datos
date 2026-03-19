@@ -99,7 +99,7 @@ void vaciarLista (List *lista, int elemento)
    void *primero = first(lista);
    for(int i = 0; i < talla; i++)
       {
-         if(*(int*)primero == elemento)
+         if((int*)*primero == elemento)
          {
             popCurrent(lista);
          }

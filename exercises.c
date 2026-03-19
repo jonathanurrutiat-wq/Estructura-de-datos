@@ -60,8 +60,10 @@ Crea una función que reciba una lista de enteros (int*) y
 retorne la suma de sus elementos.
 */
 int sumaLista(List *L) {
-   int *acumulado = (int *)first(L);
+   int acumulado = 0;
    int tamano = get_size(L);
+   
+   acumulado += (int)*first(L)
    for (int i = 0; i < tamano; i++)
       {
          int *dato = (int*) next(L);

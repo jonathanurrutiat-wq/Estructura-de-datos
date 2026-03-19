@@ -51,7 +51,7 @@ List* crea_lista() {
 
       }
 
-   return L
+   return L;
 }
 
 /*

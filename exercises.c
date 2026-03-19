@@ -65,6 +65,7 @@ int sumaLista(List *L) {
    for (int i = 0; i < tamano; i++)
       {
          int *dato = (int*) next(L);
+         *acumulado += *dato
       }
    return 0;
 }

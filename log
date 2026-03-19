@@ -101,3 +101,17 @@ exercises.c:102:13: error: invalid use of void expression
       |             ^
 cc1: all warnings being treated as errors
 1aab65f
+Thu Mar 19 07:23:05 PM UTC 2026: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘vaciarLista’:
+exercises.c:99:19: error: expected expression before ‘int’
+   99 |    int *primero = int *(first(lista));
+      |                   ^~~
+exercises.c:102:27: error: comparison between pointer and integer [-Werror]
+  102 |          if((int*)primero == elemento)
+      |                           ^~
+cc1: all warnings being treated as errors
+4cd7834

@@ -93,7 +93,7 @@ posiciona en el elemento anterior.
 */
 
 
-def vaciarLista (List lista, int elemento)
+void vaciarLista (List lista, int elemento)
 {
    int talla = get_size(lista);
    void *primero = first(lista);

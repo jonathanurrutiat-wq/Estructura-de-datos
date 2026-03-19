@@ -98,7 +98,7 @@ void vaciarLista (List *lista, int elemento)
    int talla = get_size(lista);
    int* primero = first(lista);
 
-   printf("%d", (int)*primero)
+   printf("%d", (int)*primero);
 
    for(int i = 0; i < talla; i++)
       {

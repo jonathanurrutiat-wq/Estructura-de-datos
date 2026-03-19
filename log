@@ -408,3 +408,20 @@ exercises.c:67:23: error: cast from pointer to integer of different size [-Werro
       |                       ^
 cc1: all warnings being treated as errors
 53d65d9
+Thu Mar 19 11:05:19 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:63:20: error: initialization of ‘int’ from ‘void *’ makes integer from pointer without a cast [-Wint-conversion]
+   63 |    int acumulado = first(L);
+      |                    ^~~~~
+exercises.c:67:28: error: dereferencing ‘void *’ pointer [-Werror]
+   67 |          acumulado += (int)*next(L);
+      |                            ^~~~~~~~
+exercises.c:67:23: error: invalid use of void expression
+   67 |          acumulado += (int)*next(L);
+      |                       ^
+cc1: all warnings being treated as errors
+5dcfe70

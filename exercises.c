@@ -45,7 +45,7 @@ List* crea_lista() {
    List* L = create_list();
    for(int i = 1; i <= 10; i++)
       {
-         void *elemento = malloc(sizeof(int));
+         int *elemento = malloc(sizeof(int));
          *elemento = i;
          pushFront(L,elemento);
 

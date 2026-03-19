@@ -472,3 +472,17 @@ exercises.c:63:8: error: unused variable ‘acumulado’ [-Werror=unused-variabl
       |        ^~~~~~~~~
 cc1: all warnings being treated as errors
 28ec25e
+Thu Mar 19 11:09:34 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:67:15: error: unused variable ‘dato’ [-Werror=unused-variable]
+   67 |          int *dato = (int*) next(L);
+      |               ^~~~
+exercises.c:63:9: error: unused variable ‘acumulado’ [-Werror=unused-variable]
+   63 |    int *acumulado = (int *)first(L);
+      |         ^~~~~~~~~
+cc1: all warnings being treated as errors
+640dbd9

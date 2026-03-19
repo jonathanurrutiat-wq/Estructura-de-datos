@@ -55,9 +55,33 @@ int sumaLista(List *L) {
    return 0;
 }
 
+/*
+Ejercicio 3.
+Crea una función que reciba una lista de punteros a int (int*) y
+un entero elem. La función debe eliminar todos los elementos 
+de la lista que sean iguales a elem.
+Asume que popCurrent luego de eliminar un elemento se
+posiciona en el elemento anterior.
+*/
 
 
-void eliminaElementos(List*L, int elem){
+
+void eliminaElementos(List*L, int elem)
+{
+
+   int talla = get_size(L);
+   int* primero = first(L);
+
+
+   for(int i = 0; i < talla; i++)
+      {
+         if((int)*primero == elemento)
+         {
+            popCurrent(L);
+         }
+         primero = next(L);
+
+      }
 
 }
 
@@ -82,31 +106,4 @@ int parentesisBalanceados(char *cadena) {
    return 0;
 }
 
-
-/*
-Ejercicio 3.
-Crea una función que reciba una lista de punteros a int (int*) y
-un entero elem. La función debe eliminar todos los elementos 
-de la lista que sean iguales a elem.
-Asume que popCurrent luego de eliminar un elemento se
-posiciona en el elemento anterior.
-*/
-
-
-void vaciarLista (List *lista, int elemento)
-{
-   int talla = get_size(lista);
-   int* primero = first(lista);
-   printf("%d", (int)*primero);
-
-   for(int i = 1; i < talla; i++)
-      {
-         if((int)*primero == elemento)
-         {
-            popCurrent(lista);
-         }
-
-      }
-   
-}
 

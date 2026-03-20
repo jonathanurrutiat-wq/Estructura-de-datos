@@ -180,9 +180,35 @@ int parentesisBalanceados(char *cadena) {
          }
          
       }   
-   
+
+   if(top(pila1) != NULL)
+   {
+      return 0;
+   }
    return 1;
 }
 
+
+
+/*int parentesisBalanceados(char *cadena) {
+
+   parentesis = ([{}])
+   
+   Stack *pila1 = create_stack();
+   Stack *pila2 = create_stack();
+   Stack *pilaAux = create_stack();
+
+   for(size_t i = 0; i < strlen(cadena); i++)
+   {
+      push(pila1, cadena+i);
+      push(pilaAux, cadena+i);
+   }
+
+   for(size_t i = 0; i < strlen(cadena); i++)
+   {
+      push(pila2, top(pilaAux));
+      pop(pilaAux);
+   }
+}*/
 
 

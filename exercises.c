@@ -145,11 +145,11 @@ int parentesisBalanceados(char *cadena) {
 
    /* parentesis = ([{}])*/
    Stack *pila1 = create_stack();
-   Stack *pila2 = create_stack();
+   /*Stack *pila2 = create_stack();*/
 
    for(size_t i = 0; i < strlen(cadena); i++)
       {
-         push(pila1, cadena[i]);
+         push(pila1, (char)cadena[i]);
          printf("%c", cadena[i]);
       }
 

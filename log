@@ -745,3 +745,20 @@ Fri Mar 20 08:18:27 PM UTC 2026:
  tests:  4|1
 total_score: 50/70
 7a1f759
+Fri Mar 20 08:22:49 PM UTC 2026: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:152:30: error: expected ‘)’ before ‘;’ token
+  152 |          push(pila1, cadena+i;
+      |              ~               ^
+      |                              )
+exercises.c:153:36: error: expected ‘;’ before ‘}’ token
+  153 |          printf("%c", *(cadena+i));
+      |                                    ^
+      |                                    ;
+  154 |       }
+      |       ~                             
+d251501

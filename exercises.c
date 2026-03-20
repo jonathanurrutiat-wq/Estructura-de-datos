@@ -150,7 +150,7 @@ int parentesisBalanceados(char *cadena) {
    for(size_t i = 0; i < strlen(cadena); i++)
       {
          push(pila1, cadena+i);
-         printf("%c", *(cadena+i) );
+        
       }
 
    

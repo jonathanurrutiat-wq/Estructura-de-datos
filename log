@@ -594,3 +594,62 @@ Thu Mar 19 11:49:37 PM UTC 2026:
  tests:  4|1
 total_score: 50/70
 aa5799b
+Fri Mar 20 01:02:32 AM UTC 2026: 
+ exercises.c | 30 ++++++++++++++++++++++++++----
+ 1 file changed, 26 insertions(+), 4 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:152:24: error: comparison between pointer and integer [-Werror]
+  152 |          if (cadena[i] == "(")
+      |                        ^~
+exercises.c:152:24: error: comparison with string literal results in unspecified behavior [-Werror=address]
+exercises.c:154:30: error: initialization of ‘char’ from ‘char *’ makes integer from pointer without a cast [-Wint-conversion]
+  154 |             char noBuscar1 = "]";
+      |                              ^~~
+exercises.c:155:30: error: initialization of ‘char’ from ‘char *’ makes integer from pointer without a cast [-Wint-conversion]
+  155 |             char noBuscar2 = "}";
+      |                              ^~~
+exercises.c:155:18: error: unused variable ‘noBuscar2’ [-Werror=unused-variable]
+  155 |             char noBuscar2 = "}";
+      |                  ^~~~~~~~~
+exercises.c:154:18: error: unused variable ‘noBuscar1’ [-Werror=unused-variable]
+  154 |             char noBuscar1 = "]";
+      |                  ^~~~~~~~~
+exercises.c:157:28: error: comparison between pointer and integer [-Werror]
+  157 |          else if(cadena[i] == "[")
+      |                            ^~
+exercises.c:157:28: error: comparison with string literal results in unspecified behavior [-Werror=address]
+exercises.c:159:30: error: initialization of ‘char’ from ‘char *’ makes integer from pointer without a cast [-Wint-conversion]
+  159 |             char noBuscar1 = ")";
+      |                              ^~~
+exercises.c:160:30: error: initialization of ‘char’ from ‘char *’ makes integer from pointer without a cast [-Wint-conversion]
+  160 |             char noBuscar2 = "}";
+      |                              ^~~
+exercises.c:160:18: error: unused variable ‘noBuscar2’ [-Werror=unused-variable]
+  160 |             char noBuscar2 = "}";
+      |                  ^~~~~~~~~
+exercises.c:159:18: error: unused variable ‘noBuscar1’ [-Werror=unused-variable]
+  159 |             char noBuscar1 = ")";
+      |                  ^~~~~~~~~
+exercises.c:164:30: error: initialization of ‘char’ from ‘char *’ makes integer from pointer without a cast [-Wint-conversion]
+  164 |             char noBuscar1 = ")";
+      |                              ^~~
+exercises.c:165:30: error: initialization of ‘char’ from ‘char *’ makes integer from pointer without a cast [-Wint-conversion]
+  165 |             char noBuscar2 = "]";
+      |                              ^~~
+exercises.c:165:18: error: unused variable ‘noBuscar2’ [-Werror=unused-variable]
+  165 |             char noBuscar2 = "]";
+      |                  ^~~~~~~~~
+exercises.c:164:18: error: unused variable ‘noBuscar1’ [-Werror=unused-variable]
+  164 |             char noBuscar1 = ")";
+      |                  ^~~~~~~~~
+exercises.c:171:33: error: ‘noBuscar1’ undeclared (first use in this function)
+  171 |                if (cadena[k] == noBuscar1 || cadena[k] == noBuscar2)
+      |                                 ^~~~~~~~~
+exercises.c:171:33: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:171:59: error: ‘noBuscar2’ undeclared (first use in this function)
+  171 |                if (cadena[k] == noBuscar1 || cadena[k] == noBuscar2)
+      |                                                           ^~~~~~~~~
+cc1: all warnings being treated as errors
+9331220

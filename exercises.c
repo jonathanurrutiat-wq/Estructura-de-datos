@@ -149,20 +149,20 @@ int parentesisBalanceados(char *cadena) {
    
    for(int i = 0; i < tamano; i++)
       {
-         if (cadena[i] == "(")
+         if (cadena[i] == '(')
          {
-            char noBuscar1 = "]";
-            char noBuscar2 = "}";
+            char noBuscar1 = ']';
+            char noBuscar2 = '}';
          }
-         else if(cadena[i] == "[")
+         else if(cadena[i] == '[')
          {
-            char noBuscar1 = ")";
-            char noBuscar2 = "}";
+            char noBuscar1 = ')';
+            char noBuscar2 = '}';
          }
          else
          {
-            char noBuscar1 = ")";
-            char noBuscar2 = "]";
+            char noBuscar1 = ')';
+            char noBuscar2 = ']';
          }
 
          

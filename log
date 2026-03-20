@@ -728,3 +728,14 @@ stack.h:11:31: note: expected ‘void *’ but argument is of type ‘char’
    11 | void push(Stack *stack, void *data) { pushFront(stack, data); }
       |                         ~~~~~~^~~~
 9caca6e
+Fri Mar 20 08:18:04 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:152:22: error: cast to pointer from integer of different size [-Werror=int-to-pointer-cast]
+  152 |          push(pila1, (char*)cadena[i]);
+      |                      ^
+cc1: all warnings being treated as errors
+a3cf8d5
